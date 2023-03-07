@@ -1,0 +1,1044 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+
+# -----------------------------------------------
+# Config
+
+auto_restart: ON
+
+# -----------------------------------------------
+
+
+matches:
+  # Simple text replacement
+#  - trigger: ":espanso"
+#    replace: "Hi there!"
+
+  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
+
+  # But matches can also be dynamic:
+
+  # Print the current date
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d/%m/%Y"
+
+  # Print the output of a shell command
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo 'Hello from your shell'"
+
+  # And much more! For more information, visit the docs: https://espanso.org/docs/
+
+#------------------------------------------------
+
+# Greek
+  - trigger: "\\Alpha"
+    replace: "Α"
+    
+  - trigger: "\\alpha"
+    replace: "α"
+    
+  - trigger: "\\Beta"
+    replace: "Β"
+    
+  - trigger: "\\Beta"
+    replace: "β"
+    
+  - trigger: "\\Gamma"
+    replace: "Γ"
+    
+  - trigger: "\\gamma"
+    replace: "γ"
+    
+  - trigger: "\\Delta"
+    replace: "Δ"
+    
+  - trigger: "\\delta"
+    replace: "δ"
+    
+  - trigger: "\\Epsilon"
+    replace: "Ε"
+    
+  - trigger: "\\epsilon"
+    replace: "ε"
+    
+  - trigger: "\\Zeta"
+    replace: "Ζ"
+    
+  - trigger: "\\zeta"
+    replace: "ζ"
+    
+  - trigger: "\\Eta"
+    replace: "Η"
+    
+  - trigger: "\\eta"
+    replace: "η"
+    
+  - trigger: "\\Theta"
+    replace: "Θ"
+    
+  - trigger: "\\theta"
+    replace: "θ"
+    
+  - trigger: "\\Iota"
+    replace: "Ι"
+    
+  - trigger: "\\iota"
+    replace: "ι"
+    
+  - trigger: "\\Kappa"
+    replace: "Κ"
+    
+  - trigger: "\\kappa"
+    replace: "κ"
+    
+  - trigger: "\\Lambda"
+    replace: "Λ"
+    
+  - trigger: "\\lambda"
+    replace: "λ"
+    
+  - trigger: "\\Mu"
+    replace: "Μ"
+    
+  - trigger: "\\mu"
+    replace: "μ"
+    
+  - trigger: "\\Nu"
+    replace: "Ν"
+    
+  - trigger: "\\nu"
+    replace: "ν"
+    
+  - trigger: "\\Xi"
+    replace: "Ξ"
+    
+  - trigger: "\\xi"
+    replace: "ξ"
+    
+  - trigger: "\\Omicron"
+    replace: "Ο"
+    
+  - trigger: "\\omicron"
+    replace: "ο"
+    
+  - trigger: "\\Π"
+    replace: "Pi"
+    
+  - trigger: "\\pi"
+    replace: "π"
+    
+  - trigger: "\\Rho"
+    replace: "Ρ"
+    
+  - trigger: "\\rho"
+    replace: "ρ"
+    
+  - trigger: "\\Sigma"
+    replace: "Σ"
+    
+  - trigger: "\\sigma"
+    replace: "σ"
+    
+  - trigger: "\\Tau"
+    replace: "Τ"
+    
+  - trigger: "\\tau"
+    replace: "τ"
+    
+  - trigger: "\\Upsilon"
+    replace: "Υ"
+    
+  - trigger: "\\upsilon"
+    replace: "υ"
+    
+  - trigger: "\\Phi"
+    replace: "Φ"
+    
+  - trigger: "\\phi"
+    replace: "φ"
+    
+  - trigger: "\\Chi"
+    replace: "Χ"
+    
+  - trigger: "\\chi"
+    replace: "χ"
+    
+  - trigger: "\\Psi"
+    replace: "Ψ"
+    
+  - trigger: "\\psi"
+    replace: "ψ"
+    
+  - trigger: "\\Omega"
+    replace: "Ω"
+    
+  - trigger: "\\omega"
+    replace: "ω"
+    
+# -----------------------------------------------
+# from:
+# https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject
+# Math
+
+# ∫
+
+# ⇶  
+
+  # symbols	----------------------
+  
+  - trigger: "\\lfinger"
+    replace: "☚"
+    
+  - trigger: "\\rfinger"
+    replace: "☛"
+    
+  - trigger: "\\Rfinger"
+    replace: "👉"
+    
+  - trigger: "\\Lfinger"
+    replace: "👈"
+    
+  - trigger: "\\Ufinger"
+    replace: "☝️"
+    
+  - trigger: "\\Mfinger"
+    replace: "🖕"
+    
+  - trigger: "\\thumbup"
+    replace: "👍"
+    
+  - trigger: "\\thumbdown"
+    replace: "👎"
+    
+  - trigger: "\\check"
+    replace: "✓"
+    
+  - trigger: "\\cross"
+    replace: "✗"
+    
+  - trigger: "\\ebox"
+    replace: "☐"
+    
+  - trigger: "\\ybox"
+    replace: "☑"
+    
+  - trigger: "\\xbox"
+    replace: "☒"
+  
+  - trigger: "\\fah"
+    replace: "℉"
+    
+  - trigger: "\\cel"
+    replace: "℃"
+    
+  - trigger: "\\inf"
+    replace: "∞"
+    
+  - trigger: "\\..."
+    replace: "…"
+    
+  - trigger: "\\!?"
+    replace: "⁉"
+    
+  - trigger: "\\++"
+    replace: "⧺"
+    
+  - trigger: "\\+-"
+    replace: "±"
+  
+  - trigger: "\\degree"
+    replace: "°"
+    
+  - trigger: "\\numero"
+    replace: "№"
+    
+  - trigger: "\\idk"
+    replace: "⯑"
+   
+  - trigger: "\\ss"
+    replace: "§"
+    
+  - trigger: "\\hdot"
+    replace: "⋯"
+    
+  - trigger: "\\vdot"
+    replace: "⋮"
+    
+  - trigger: "\\vline"
+    replace: "|"
+    
+  - trigger: "\\hline"
+    replace: "─"
+    
+  - trigger: "\\cent"
+    replace: "¢"
+    
+  - trigger: "\\dollar"
+    replace: "﹩"
+    
+  # CS ---------------------------
+  
+  - trigger: "\\kb"
+    replace: "㎅"
+    
+  - trigger: "\\Mb"
+    replace: "㎆"
+    
+  - trigger: "\\Gb"
+    replace: "㎇"
+    
+  - trigger: "\\khz"
+    replace: "㎑"  
+    
+  - trigger: "\\Mhz"
+    replace: "㎒"
+    
+  - trigger: "\\Ghz"
+    replace: "㎓"
+    
+  - trigger: "\\ms"
+    replace: "㎳"
+    
+  - trigger: "\\us"
+    replace: "㎲"
+    
+  - trigger: "\\ns"
+    replace: "㎱"
+    
+  - trigger: "\\bigO"
+    replace: "𝒪"
+    
+  - trigger: "\\power"
+    replace: "𝒫"
+    
+  - trigger: "\\=="
+    replace: "⩵"
+    
+  - trigger: "\\:="
+    replace: "≔"
+    
+  - trigger: "\\cc="
+    replace: "⩴"
+    
+  - trigger: "\\::"
+    replace: "∷"
+    
+  - trigger: ".\\"
+    replace: "λ"
+  
+  # math -------------------------
+  # 𝒾  𝒿  𝓀  
+  
+  # primes 
+
+  - trigger: "\\'"
+    replace: "ʹ"
+
+  - trigger: "\\\""  
+    replace: "ʺ"
+    
+#  - trigger: "\\p3"
+#    replace: "‴"
+    
+#  - trigger: "\\p4"
+#    replace: "⁗"
+  
+  - trigger: "\\func"
+    replace: "ƒ"
+    
+  - trigger: "\\integral"
+    replace: "∫"
+  
+  - trigger: "\\therefore"
+    replace: "∴"
+    
+  - trigger: "\\because"
+    replace: "∵"
+    
+  - trigger: "\\end"
+    replace: "∎"
+  
+  - trigger: "\\lozenge"
+    replace: "◊"
+ 
+  - trigger: "\\partial"
+    replace: "∂" 
+    
+  - trigger: "\\nabla"
+    replace: "∇"
+    
+  - trigger: "\\sqrt"
+    replace: "√"
+
+  - trigger: "\\3root"
+    replace: "∛"
+    
+  - trigger: "\\solidus"
+    replace: "⧸"
+    
+  - trigger: "\\4root"
+    replace: "∜"
+        
+  - trigger: "\\wave"
+    replace: "〜"
+    
+  - trigger: "\\transpose"
+    replace: "ᵀ"
+           
+  - trigger: "\\perp"
+    replace: "∥"
+  
+  - trigger: "\\triangle"
+    replace: "‣"
+    
+  - trigger: "\\diamond"
+    replace: "⋄" 
+    
+  - trigger: "\\dot"
+    replace: "⋅"
+    
+  - trigger: "\\star"
+    replace: "⋆"
+    
+  - trigger: "\\ast"
+    replace: "∗"
+    
+  - trigger: "\\Ast"
+    replace: "✻"
+    
+  - trigger: "\\div"
+    replace: "÷"
+    
+  - trigger: "\\times"
+    replace: "×"
+    
+  - trigger: "\\compose"
+    replace: "∘"
+    
+  - trigger: "\\product"
+    replace: "⨉"
+    
+  - trigger: "\\bullet"
+    replace: "∙"
+    
+  - trigger: "\\floor"
+    replace: "⌊ ⌋"
+    
+  - trigger: "\\ceil"
+    replace: "⌈ ⌉"
+
+  - trigger: "\\ratio"
+    replace: "∶"
+    
+  # logical ----------------------
+  
+  - trigger: "\\not"
+    replace: "¬"
+   
+  - trigger: "\\land"
+    replace: "∧"
+    
+  - trigger: "\\lor"
+    replace: "∨"
+    
+  - trigger: "\\nand"
+    replace: "⊼"
+    
+  - trigger: "\\nor"
+    replace: "⊽"
+    
+  - trigger: "\\xor"
+    replace: "⊻"
+  
+  - trigger: "\\And"
+    replace: "⋀"
+    
+  - trigger: "\\Or"
+    replace: "⋁"
+   
+  # either bitshift or much-< or very-much-<
+  
+  - trigger: "\\lshift"
+    replace: "≪"
+    
+  - trigger: "\\rshift"
+    replace: "≫"
+    
+  - trigger: "\\Lshift"
+    replace: "⋘"
+    
+  - trigger: "\\Rshift"
+    replace: "⋙" 
+
+  # Set --------------------------
+  
+  - trigger: "\\set-"
+    replace: "∖"
+    
+  - trigger: "\\empty"
+    replace: "∅"
+    
+  - trigger: "\\bempty"
+    replace: "⦱"
+  
+  - trigger: "\\Intersect"
+    replace: "⋂"
+    
+  - trigger: "\\Union"
+    replace: "⋃"
+    
+  - trigger: "\\intersect"
+    replace: "∩"
+
+  - trigger: "\\union"
+    replace: "∪"
+    
+  - trigger: "\\subset"
+    replace: "⊂"
+    
+  - trigger: "\\superset"
+    replace: "⊃"
+
+  - trigger: "\\nsubset"
+    replace: "⊄"
+    
+  - trigger: "\\nsubset"
+    replace: "⊅"
+    
+  - trigger: "\\sbset="
+    replace: "⊆"
+
+  - trigger: "\\spset="
+    replace: "⊇"
+
+  - trigger: "\\nsbset="
+    replace: "⊈"
+    
+  - trigger: "\\nspset="
+    replace: "⊉"
+    
+  # logical ----------------------
+    
+  - trigger: "\\forall"
+    replace: "∀"
+    
+  - trigger: "\\exists"
+    replace: "∃"
+    
+  - trigger: "\\nexists"
+    replace: "∄"
+    
+  - trigger: "\\element"
+    replace: "∈"
+    
+  - trigger: "\\nelement"  
+    replace: "∉"
+    
+  - trigger: "\\selement"
+    replace: "∊"
+    
+  - trigger: "\\contains"
+    replace: "∋"
+    
+  - trigger: "\\ncontains"
+    replace: "∌"
+    
+  - trigger: "\\bcontains"
+    replace: "⋽"
+    
+  - trigger: "\\scontains"
+    replace: "∍"
+    
+  - trigger: "\\identical"
+    replace: "≡"
+    
+  - trigger: "\\nidentical"
+    replace: "≢"
+    
+  - trigger: "\\proves"		# proves
+    replace: "⊢"
+    
+  - trigger: "\\nproves"
+    replace: "⊬"
+    
+  - trigger: "\\model"			# models
+    replace: "⊨"
+    
+  - trigger: ":\\nmodel"
+    replace: "⊭"
+    
+  # comparison -------------------
+  
+  - trigger: "\\prop"
+    replace: "∝"
+  
+  - trigger: "\\approx"
+    replace: "≈"
+    
+  - trigger: "\\napprox"
+    replace: "≉"
+  
+  - trigger: "\\<="
+    replace: "≤"
+    
+  - trigger: "\\>="
+    replace: "≥"
+  
+  - trigger: "\\!="
+    replace: "≠"
+
+  - trigger: "\\n<"
+    replace: "≮"
+    
+  - trigger: "\\n>="
+    replace: "≯"
+
+  - trigger: "\\n<="
+    replace: "≰"
+    
+  - trigger: "\\n>="
+    replace: "≱"
+   
+  # equal arrows -----------------
+    
+  - trigger: "\\r="
+    replace: "⇒"
+    
+  - trigger: "\\rn="
+    replace: "⇏"
+    
+  - trigger: "\\b="
+    replace: "⇔"
+    
+  - trigger: "\\bn="
+    replace: "⇎"
+    
+  - trigger: "\\l="
+    replace: "⇐"
+    
+  - trigger: "\\ln="
+    replace: "⇍"
+    
+  - trigger: "\\u="
+    replace: "⇑"
+    
+  - trigger: "\\d="
+    replace: "⇓"
+    
+  # arrows
+    
+  - trigger: "\\r-"
+    replace: "→"
+    
+  - trigger: "\\rn-"
+    replace: "↛"
+    
+  - trigger: "\\b-"
+    replace: "↔"
+    
+  - trigger: "\\bn-"
+    replace: "↚"
+    
+  - trigger: "\\l-"
+    replace: "←"
+    
+  - trigger: "\\ln-"
+    replace: "↚"
+    
+  - trigger: "\\u-"
+    replace: "↑"
+    
+  - trigger: "\\d-"
+    replace: "↓"
+    
+  # big arrows
+  
+  - trigger: "\\R-"
+    replace: "⟶"
+    
+  - trigger: "\\B-"
+    replace: "⟷"
+    
+  - trigger: "\\L-"
+    replace: "⟵"
+
+  - trigger: "\\R="
+    replace: "⟹"
+        
+  - trigger: "\\L="
+    replace: "⟸"
+    
+  - trigger: "\\B="
+    replace: "⟺"
+  
+  - trigger: "\\l~"
+    replace: "⤳"
+    
+  - trigger: "\\r~"
+    replace: "⬿"
+
+  - trigger: "\\lhook"
+    replace: "↞"
+    
+  - trigger: "\\rhook"
+    replace: "↠"
+    
+  - trigger: "\\lfish"
+    replace: "↢"
+    
+  - trigger: "\\rfish"
+    replace: "↣"
+    
+  - trigger: "\\l|"
+    replace: "↤"
+    
+  - trigger: "\\r|"
+    replace: "↦"
+
+  - trigger: "\\L|" 
+    replace: "⤆"
+    
+  - trigger: "\\R|"
+    replace: "⤇"
+    
+    
+  # subscripts & superscripts   
+  # subscripts
+   
+  - trigger: "\\_+" 
+    replace: "₊"
+ 
+  - trigger: "\\_-"
+    replace: "₋"
+    
+  - trigger: "\\_0"
+    replace: "₀"
+    
+  - trigger: "\\_1"
+    replace: "₁"
+    
+  - trigger: "\\_2"
+    replace: "₂"  
+    
+  - trigger: "\\_3"
+    replace: "₃"
+    
+  - trigger: "\\_4"
+    replace: "₄"
+
+  - trigger: "\\_5"
+    replace: "₅"
+    
+  - trigger: "\\_6"
+    replace: "₆"
+    
+  - trigger: "\\_7"
+    replace: "₇"
+    
+  - trigger: "\\_8"
+    replace: "₈"
+    
+  - trigger: "\\_9"
+    replace: "₉"
+    
+  - trigger: "\\_10"
+    replace: "⏨"
+
+  - trigger: "\\_n"
+    replace: "ₙ"
+
+  # super-script 
+
+  - trigger: "\\^0"
+    replace: "⁰"
+   
+  - trigger: "\\^1"
+    replace: "¹"
+   
+  - trigger: "\\^2"
+    replace: "²"
+    
+  - trigger: "\\^3"
+    replace: "³"
+   
+  - trigger: "\\^4"
+    replace: "⁴"
+   
+  - trigger: "\\^5"
+    replace: "⁵"
+
+  - trigger: "\\^6"
+    replace: "⁶"
+   
+  - trigger: "\\^7"
+    replace: "⁷"
+   
+  - trigger: "\\^8"
+    replace: "⁸"
+    
+  - trigger: "\\^9"
+    replace: "⁹"
+   
+  - trigger: "\\^+"
+    replace: "⁺"
+   
+  - trigger: "\\^-"
+    replace: "⁻"
+    
+  # pred
+  - trigger: "\\prec"
+    replace: "≺"
+   
+  - trigger: "\\succ"
+    replace: "≻"
+    
+  - trigger: "\\pre="
+    replace: "≼"
+   
+  - trigger: "\\suc="
+    replace: "≽"
+   
+  - trigger: "\\npre="
+    replace: "⋠"    
+    
+  - trigger: "\\nsuc="
+    replace: "⋡"
+  
+  # groups
+  # ⊲  ⊴ …
+  
+  # quotes -----------------------
+  
+  - trigger: "\\l<"
+    replace: "‹"
+ 
+  - trigger: "\\r<"
+    replace: "›"
+
+  - trigger: "\\lq"
+    replace: "«"
+    
+  - trigger: "\\rq"
+    replace: "»"
+    
+  # brackets ---------------------
+
+  - trigger: "\\lv"
+    replace: "⟨"
+ 
+  - trigger: "\\rv"
+    replace: "⟩"
+    
+  - trigger: "\\lt"
+    replace: "❲"
+    
+  - trigger: "\\rt"
+    replace: "❳"
+    
+  - trigger: "\\lb"
+    replace: "⟅"
+    
+  - trigger: "\\rb"
+    replace: "⟆"
+    
+  - trigger: "\\lV"
+    replace: "⟪"
+    
+  - trigger: "\\rV"
+    replace: "⟫"
+    
+  - trigger: "\\lz"
+    replace: "⦉"
+    
+  - trigger: "\\rz"
+    replace: "⦊"
+
+  - trigger: "\\l[["
+    replace: "⟦"
+    
+  - trigger: "\\r]]"
+    replace: "⟧"
+ 
+  - trigger: "\\l{{"
+    replace: "⦃"
+    
+  - trigger: "\\r}}"
+    replace: "⦄"
+    
+  - trigger: "\\ltt"
+    replace: "⟬"
+    
+  - trigger: "\\rtt"
+    replace: "⟭"
+    
+  - trigger: "\\l(("
+    replace: "⦅"
+    
+  - trigger: "\\r))"
+    replace: "⦆"
+
+  # enclosed numbers -------------
+  # 🄌 ➊ ➋ ➌ ➍ ➎ ➏ ➐ ➑ ➒ ➓
+  
+  - trigger: "\\o0"
+    replace: "🄌"
+    
+  - trigger: "\\o1"
+    replace: "➊"
+    
+  - trigger: "\\o2"
+    replace: "➋"
+    
+  - trigger: "\\o3"
+    replace: "➌"  
+    
+  - trigger: "\\o4"
+    replace: "➍"
+    
+  - trigger: "\\o5"
+    replace: "➎"
+
+  - trigger: "\\o6"
+    replace: "➏"
+    
+  - trigger: "\\o7"
+    replace: "➐"
+    
+  - trigger: "\\o8"
+    replace: "➑"
+    
+  - trigger: "\\o9"
+    replace: "➒"
+    
+  - trigger: "\\ot"
+    replace: "➓"
+
+  # over/modifier chars ----------
+  # 'o' for over
+    
+  - trigger: "\\ohat"
+    replace: "\u0302"
+ 
+  - trigger: "\\obar"
+    replace: "\u0305"
+    
+  - trigger: "\\odot"
+    replace: "\u0307"
+
+  - trigger: "\\oddot"
+    replace: "\u0308"  
+    
+  - trigger: "\\oslash"
+    replace: "\u0338"
+    
+  - trigger: "\\ograve"
+    replace: "\u0301"  
+    
+  - trigger: "\\otilde"
+    replace: "\u0303"
+    
+  - trigger: "\\ocaron"
+    replace: "\u0312"   
+    
+  - trigger: "\\oarrow"
+    replace: "\u20d7"      
+     
+  - trigger: "\\oring"
+    replace: "\u030A"
+    
+    # fractions ------------------
+  - trigger: "\\quarter"
+    replace: "¼"  
+    
+  - trigger: "\\half"
+    replace: "½"
+    
+  - trigger: "\\third"
+    replace: "⅓"
+
+  - trigger: "\\tenth"
+    replace: "⅒"
+    
+  
+  # vector operators -------------
+  
+  - trigger: "\\v+"
+    replace: "⊕"
+    
+  - trigger: "\\v-"
+    replace: "⊖"
+    
+  - trigger: "\\vx"
+    replace: "⊗"
+    
+  - trigger: "\\v/"
+    replace: "⊘"
+    
+  - trigger: "\\v."
+    replace: "⊙"
+
+  - trigger: "\\vo"
+    replace: "⊚"
+    
+  - trigger: "\\v*"
+    replace: "⊛"
+    
+  - trigger: "\\v<"
+    replace: "⧀"
+    
+  - trigger: "\\v>"
+    replace: "⧁"
+    
+  - trigger: "\\v="
+    replace: "⊜"
+
+
+
+
+
+
+  - trigger: ""
+    replace: ""
+    
+  - trigger: ""
+    replace: ""
+    
+  - trigger: ""
+    replace: ""
+    
+  - trigger: ""
+    replace: ""
+
+
+
+
+# bold   	boldA
+
+
+# italic	italicA
+
+
+# script / calligraphy  scriptA scripta
+#𝒜 ℬ 𝒞 𝒟 ℰ ℱ 𝒢 ℋ ℐ 𝒥 𝒦 ℒ ℳ 𝒩 𝒪 𝒫 𝒬 ℛ 𝒮 𝒯 𝒰 𝒱 𝒲 𝒳 𝒴 𝒵 
+#𝒶 𝒷 𝒸 𝒹 ℯ 𝒻 ℊ 𝒽 𝒾 𝒿 𝓀 𝓁 𝓂 𝓃 ℴ 𝓅 𝓆 𝓇 𝓈 𝓉 𝓊 𝓋 𝓌 𝓍 𝓎 𝓏
+
+# double-struck 	ddA dda
+# 𝔸 𝔹 ℂ 𝔻 𝔼 𝔽 𝔾 ℍ 𝕀 𝕁 𝕂 𝕃 𝕄 ℕ 𝕆 ℙ ℚ ℝ 𝕊 𝕋 𝕌 𝕍 𝕎 𝕏 𝕐 ℤ 
+# 𝕒 𝕓 𝕔 𝕕 𝕖 𝕗 𝕘 𝕙 𝕚 𝕛 𝕜 𝕝 𝕞 𝕟 𝕠 𝕡 𝕢 𝕣 𝕤 𝕥 𝕦 𝕧 𝕨 𝕩 𝕪 𝕫 
